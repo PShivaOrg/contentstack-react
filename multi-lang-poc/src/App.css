@@ -182,3 +182,630 @@
     border-right-color: var(--border);
   }
 }
+
+
+
+
+
+
+/* =========================================
+   GLOBAL
+========================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  background: #ffffff;
+  color: #111111;
+  border-bottom: 1px solid var(--border);
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+
+/* =========================================
+   MAIN WEBSITE
+========================================= */
+
+.website {
+  width: 100%;
+  overflow: hidden;
+}
+
+
+/* =========================================
+   HERO SECTION
+========================================= */
+
+.hero-section {
+  position: relative;
+
+  min-height: 720px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 100px 30px 120px;
+
+  background:
+    radial-gradient(
+      circle at 15% 20%,
+      rgba(80, 85, 110, 0.30),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 85% 70%,
+      rgba(50, 55, 80, 0.30),
+      transparent 35%
+    ),
+    #151821;
+
+  color: #ffffff;
+
+  overflow: hidden;
+}
+
+
+/* Background decorative shapes */
+
+.hero-section::before {
+  content: "";
+
+  position: absolute;
+
+  width: 650px;
+  height: 650px;
+
+  top: -350px;
+  left: -150px;
+
+  background: #1e222d;
+
+  border-radius: 100px;
+
+  transform: rotate(45deg);
+
+  opacity: 0.8;
+}
+
+
+.hero-section::after {
+  content: "";
+
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+
+  right: -250px;
+  bottom: -250px;
+
+  background: #202532;
+
+  border-radius: 50%;
+
+  opacity: 0.7;
+}
+
+
+/* =========================================
+   HERO CONTENT
+========================================= */
+
+.hero-content {
+  position: relative;
+
+  z-index: 2;
+
+  width: 100%;
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+
+/* =========================================
+   SMALL EYEBROW
+========================================= */
+
+.hero-eyebrow {
+  margin: 0 0 22px;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+  color: #c7ff2f;
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.hero-title {
+  margin: 0 auto;
+
+  max-width: 850px;
+
+  font-size: 64px;
+
+  line-height: 1.05;
+
+  font-weight: 700;
+
+  letter-spacing: -2px;
+
+  color: #ffffff;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.hero-description {
+  max-width: 650px;
+
+  margin: 30px auto 35px;
+
+  font-size: 16px;
+
+  line-height: 1.7;
+
+  color: #c4c7ce;
+}
+
+
+/* =========================================
+   LANGUAGE
+========================================= */
+
+.language-wrapper {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 45px;
+}
+
+
+.language-wrapper label {
+  font-size: 12px;
+
+  font-weight: 600;
+
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+
+  color: #aeb2bb;
+}
+
+
+.language-wrapper select {
+  min-width: 150px;
+
+  padding: 11px 16px;
+
+  border: 1px solid #4b505c;
+
+  border-radius: 30px;
+
+  background: #20242f;
+
+  color: #ffffff;
+
+  font-size: 14px;
+
+  cursor: pointer;
+}
+
+
+.language-wrapper select:focus {
+  outline: none;
+
+  border-color: #c7ff2f;
+}
+
+
+/* =========================================
+   MAIN CONTENT
+========================================= */
+
+.hero-content-text {
+  max-width: 720px;
+
+  margin: 0 auto;
+}
+
+
+.hero-content-text h2 {
+  margin: 0 0 15px;
+
+  font-size: 18px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 3px;
+
+  color: #ffffff;
+}
+
+
+.hero-content-text p {
+  margin: 0;
+
+  font-size: 17px;
+
+  line-height: 1.8;
+
+  color: #b9bdc6;
+}
+
+
+/* =========================================
+   IMAGE SECTION
+========================================= */
+
+.image-section {
+  position: relative;
+
+  margin-top: -70px;
+
+  padding: 0 30px;
+
+  z-index: 10;
+}
+
+
+.image-placeholder {
+  width: 100%;
+
+  max-width: 1100px;
+
+  height: 430px;
+
+  margin: 0 auto;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 6px solid #353949;
+
+  border-radius: 28px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #252a35,
+      #11141b
+    );
+
+  color: #777d89;
+
+  font-size: 13px;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+  overflow: hidden;
+}
+
+
+/* Later when image is added */
+
+.image-placeholder img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+
+/* =========================================
+   INFORMATION SECTION
+========================================= */
+
+.information-section {
+  padding: 110px 30px 80px;
+
+  background: #ffffff;
+}
+
+
+.information-grid {
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 80px;
+}
+
+
+/* =========================================
+   INFO CARD
+========================================= */
+
+.info-card {
+  padding: 10px 0;
+}
+
+
+.info-label {
+  margin: 0 0 18px;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+  color: #777b84;
+}
+
+
+.info-card h2 {
+  margin: 0;
+
+  font-size: 32px;
+
+  line-height: 1.2;
+
+  color: #16191f;
+}
+
+
+/* =========================================
+   RICH TEXT
+========================================= */
+
+.rich-text-container {
+  font-size: 16px;
+
+  line-height: 1.7;
+
+  color: #444851;
+}
+
+
+.rich-text-container p {
+  margin-top: 0;
+}
+
+
+.rich-text-container h1,
+.rich-text-container h2,
+.rich-text-container h3 {
+  color: #17191e;
+}
+
+
+/* =========================================
+   JSON SECTION
+========================================= */
+
+.json-section {
+  padding: 80px 30px 100px;
+
+  background: #f5f5f3;
+}
+
+
+.json-container {
+  max-width: 1100px;
+
+  margin: 0 auto;
+}
+
+
+.json-container pre {
+  margin: 0;
+
+  padding: 30px;
+
+  background: #171a20;
+
+  border-radius: 15px;
+
+  color: #cdd2da;
+
+  font-family:
+    "Courier New",
+    monospace;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+
+  overflow-x: auto;
+
+  white-space: pre-wrap;
+
+  word-break: break-word;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .hero-section {
+    min-height: 650px;
+
+    padding: 90px 25px 110px;
+  }
+
+
+  .hero-title {
+    font-size: 52px;
+  }
+
+
+  .information-grid {
+    gap: 50px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .hero-section {
+    min-height: auto;
+
+    padding: 80px 20px 120px;
+  }
+
+
+  .hero-title {
+    font-size: 42px;
+
+    letter-spacing: -1px;
+  }
+
+
+  .hero-description {
+    font-size: 15px;
+  }
+
+
+  .language-wrapper {
+    flex-direction: column;
+
+    gap: 10px;
+  }
+
+
+  .language-wrapper select {
+    width: 180px;
+  }
+
+
+  .hero-content-text p {
+    font-size: 15px;
+  }
+
+
+  .image-section {
+    margin-top: -60px;
+
+    padding: 0 15px;
+  }
+
+
+  .image-placeholder {
+    height: 280px;
+
+    border-width: 4px;
+
+    border-radius: 20px;
+  }
+
+
+  .information-section {
+    padding: 80px 25px 60px;
+  }
+
+
+  .information-grid {
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+  }
+
+
+  .info-card h2 {
+    font-size: 26px;
+  }
+
+
+  .json-section {
+    padding: 60px 20px 80px;
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+  .hero-section {
+    padding-top: 65px;
+  }
+
+
+  .hero-eyebrow {
+    font-size: 10px;
+
+    letter-spacing: 1.5px;
+  }
+
+
+  .hero-title {
+    font-size: 35px;
+  }
+
+
+  .hero-description {
+    font-size: 14px;
+  }
+
+
+  .image-placeholder {
+    height: 220px;
+  }
+
+
+  .json-container pre {
+    padding: 20px;
+
+    font-size: 11px;
+  }
+
+}
