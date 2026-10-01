@@ -1,0 +1,10 @@
+{
+  "name": "contentstack-react",
+  "private": true,
+  "workspaces": [
+    "multi-lang-poc"
+  ],
+  "scripts": {
+    "build": "npm --prefix multi-lang-poc run build"
+  }
+}
